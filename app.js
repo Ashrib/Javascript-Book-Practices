@@ -111,3 +111,30 @@
 // else {
 //   e = f;
 // }
+
+       // ------Ch#15 (Arrays) ------
+// var cities = ["Atlanta", "Baltimore", "Chicago", "Denver", "Los Angeles", "Seattle"];
+// alert("Welcome to " + cities[4])
+
+// var mixedArray = [1, "Bob", "Now is", true];
+// alert(mixedArray[3]);
+
+       // ------Ch#16 (Arrays:Adding and removing elements) ------
+// var pets = [ "dog", "cat", "bird", "lizard", "fish", "gerbil", "snake"];
+// pets.pop();
+// console.log(pets);
+// pets.push("hello");
+// alert(pets);
+
+       // ------Ch#17 (Arrays:Removing, inserting,and extracting elements)------
+// var pets = [ "dog", "cat", "bird", "lizard", "fish", "gerbil", "snake"];
+// pets.shift();
+// console.log(pets);
+// pets.unshift("fish", "ferret");
+// console.log(pets);
+
+// var pets = [ "dog", "cat", "bird", "lizard", "fish", "gerbil", "snake"];
+// pets.splice(2,0, "pig", "duck", "emu");
+// console.log(pets);
+// var copy = pets.slice(2,4);
+// console.log(copy);
