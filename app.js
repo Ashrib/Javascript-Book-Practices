@@ -277,3 +277,24 @@
 // var currentAge = prompt("Enter your age.");
 // var qualifyingAge = parseInt(currentAge) + 1;
 // console.log(qualifyingAge);
+
+// var myFractional = parseFloat("1.9999");
+
+       // ------Ch#29 (Converting strings to numbers, numbers to strings)------
+// var integerString = "24"
+// var num = Number(integerString);
+// console.log(num);
+
+// var numberAsNumber = 1234;
+// var numberAsString = numberAsNumber.toString();
+// console.log(numberAsString);
+
+       // ------Ch#30 (Controlling the length of decimals)------
+// var num = "12345";
+// var str = num.toString();
+// if (str.charAt(str.length - 1) === "5") {
+//    str = str.slice(0, str.length - 1) + "6";
+// }
+// num = Number(str);
+// prettyNum = num.toFixed(2);
+// console.log(prettyNum);
