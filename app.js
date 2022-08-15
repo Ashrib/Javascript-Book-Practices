@@ -362,7 +362,29 @@
 // tellTime();
 
        // ------Ch#36 (Functions:Passing them data)------            
+// function showMessage(m, string, num) {
+//  alert(m + string + num);
+// }
+// var month = "March";
+// showMessage(month, "'s winner number is ", 23);
 
-
+       // ------Ch#37 (Functions:Passing data back from them)------
+// function calcTot(merchTot) {
+//  var orderTot;
+//  if (merchTot >= 100) {
+//        orderTot = merchTot;
+//        alert(orderTot)
+//  }
+//  else if (merchTot < 50.01) {
+//        orderTot = merchTot + 5;
+//        alert(orderTot)
+//  }
+//  else {
+//        orderTot = merchTot + 5 + (.03 * (merchTot - 50));
+//        alert(orderTot)
+//  }
+//  return orderTot;
+// }
+// calcTot(65)
 
 
