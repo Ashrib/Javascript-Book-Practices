@@ -298,3 +298,71 @@
 // num = Number(str);
 // prettyNum = num.toFixed(2);
 // console.log(prettyNum);
+
+       // ------Ch#31 (Getting the current date and time)------
+// var rightNow = new Date();
+// var theDay = rightNow.getDay();
+// console.log(theDay);
+
+// var dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+// var now = new Date();
+// var theDay = now.getDay();
+// var nameOfToday = dayNames[theDay];
+// console.log(nameOfToday);
+
+       // ------Ch#32 (Extracting parts of the date and time)------
+// var d = new Date();
+// var currentMonth = d.getMonth();
+
+// var dayOfMonth = d.getDate();
+
+// var currYr = d.getFullYear();
+
+// var currentHrs = d.getHours();
+
+// var currMins = d.getMinutes();
+
+// var currSecs = d.getSeconds()
+
+// var currMills = d.getMilliseconds();
+
+// var millsSince = d.getTime();
+
+
+       // ------Ch#33 (Specifying a date and time)------
+// var today = new Date();
+// var doomsday = new Date("June 30, 2035");
+// var msToday = today.getTime();
+// var msDoomsday = doomsday.getTime();
+// var msDiff = msDoomsday - msToday;
+// var dDiff = msDiff / (1000 * 60 * 60 * 24);
+// dDiff = Math.floor(dDiff);
+// console.log(dDiff);
+
+// var msDiff = new Date("June 30, 2035").getTime() - new Date().getTime();
+// var daysTillDoom = Mathfloor(msDiff / (1000 * 60 * 60 * 24));
+
+       // ------Ch#34 (Changing elements of a date and time)------
+// var d = new Date();
+// d.setFullYear(2001);
+// d.setMonth(11);
+// d.setDate(15);
+// d.setHours(13);
+// d.setMinutes(05);
+// d.setSeconds(55);
+// d.setMilliseconds(867);
+
+       // ------Ch#35 (Functions)------
+// function tellTime() {
+//  var now = new Date();
+//  var theHr = now.getHours();
+//  var theMin = now.getMinutes();
+//  alert("Current time: "+ theHr + ":" + theMin);
+// }
+// tellTime();
+
+       // ------Ch#36 (Functions:Passing them data)------            
+
+
+
+
