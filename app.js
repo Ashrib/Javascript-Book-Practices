@@ -138,3 +138,127 @@
 // console.log(pets);
 // var copy = pets.slice(2,4);
 // console.log(copy);
+
+       // ------Ch#18 (for loops)------
+// var cityToCheck = "Tucson";
+// var cleanestCities = ["Cheyenne", "Santa Fe", "Tucson", "Great Falls", "Honolulu"];
+// for (var i = 0; i <= 4; i++) {
+//  if (cityToCheck === cleanestCities[i]) {
+//         alert("It's one of the cleanest cities");
+//  }
+//  else{
+//         alert("no")
+//  }
+// }
+
+
+       // ------Ch#19 (for loops:Flags, Booleans, array length,and loopus interruptus)------
+// var cityToCheck = "Honolulu";
+// var cleanestCities = ["Cheyenne", "Santa Fe", "Tucson", "Great Falls", "Honolulu"];  
+// var matchFound = "no";
+// for (var i = 0; i <= 4; i++) {
+//  if (cityToCheck === cleanestCities[i]) {
+//         matchFound = "yes";
+//         alert("It's one of the cleanest cities");
+//  }
+// }
+// if (matchFound === "no") {
+//  alert("It's not on the list");
+// }
+
+// var cityToCheck = "Honolulu";
+// var cleanestCities = ["Cheyenne", "Santa Fe", "Tucson", "Great Falls", "Honolulu"];
+// var numElements = cleanestCities.length;
+// var matchFound = false;
+// for (var i = 0; i < numElements; i++) {
+//  if (cityToCheck === cleanestCities[i]) {
+//    matchFound = true;
+//    alert("It's one of the cleanest cities");
+//    break;
+//  }
+// }
+// if (matchFound === false) {
+//  alert("It's not on the list");
+// }
+
+       // ------Ch#20 (for loops nested)------
+// var firstNames = ["BlueRay ", "Upchuck ", "Lojack ", "Gizmo ", "Do-Rag "];
+// var lastNames = ["Zzz", "Burp", "Dogbone", "Droop"];
+// var fullNames = [];
+// for (var i = 0; i < firstNames.length; i++) {
+//  for (var j = 0; j < lastNames.length; j++) {
+//     fullNames.push(firstNames[i] + lastNames[j]);
+//  }
+// }
+// console.log(fullNames)
+
+       // ------Ch#21 (Changing case)------
+// var cityToCheck = prompt("Enter your city");
+// cityToCheck = cityToCheck.toLowerCase();
+// var cleanestCities = ["cheyenne", "santa fe", "tucson", "great falls", "honolulu"];
+// for (var i = 0; i <= 4; i++) {
+//   if (cityToCheck === cleanestCities[i]) {
+//     alert("It's one of the cleanest cities");
+//   }
+// }
+
+       // ------Ch#22 (Strings:Measuring length and extracting parts)------
+// var month = prompt("Enter a month");
+// var charsInMonth = month.length;
+// if (charsInMonth > 3) {
+//  monthAbbrev = month.slice(0, 3);
+// }
+// alert(monthAbbrev);
+
+// var str = prompt("Enter some text");
+// var numChars = str.length;
+// for (var i = 0; i < numChars; i++) {
+//  if (str.slice(i, i + 2) === " ") {
+//    alert("No double spaces!");
+//    break;
+//  }
+// }
+
+       // ------Ch#23 (Strings:Finding segments)------
+// var text = "It is startling to think that, even in the darkest depths of World War II, J. R. R. Tolkien was writing the trilogy, which contains, with the weird applicability available only to poetry and myth."
+// for (var i = 0; i < text.length; i++) {
+//   if (text.slice(i, i + 12) === "World War II") {
+//      text = text.slice(0, i) + "the Second World War" + text.slice(i + 12);
+//   }
+// };
+// console.log(text);
+
+// var firstChar = text.indexOf("World War II");
+// if (firstChar !== -1) {
+//  text = text.slice(0, firstChar) + "the Second World War" + text.slice(firstChar + 12);
+// } 
+
+// var text = "To be or not to be.";
+// var segIndex = text.lastIndexOf("be");
+
+       // ------Ch#24 (Strings:Finding a character at a location)------
+
+// for (var i = 0; i < text.length; i++) {
+//     if (text.charAt(i) === "!") {
+//        alert("Exclamation point found!");
+//        break;
+//     }
+// }
+
+       // ------Ch#25 (Strings:Replacing characters)------
+
+// var newText = text.replace("World War II", "the Second World War");
+
+// //global replace.
+// var newText = text.replace(/World War II/g, "the Second World War");
+
+
+       // ------Ch#26 (Rounding numbers)------
+// var scoreAvg = Math.round(.0678437);
+// console.log(scoreAvg)
+
+// var scoreAvg = Math.ceil(.000001);
+// console.log(scoreAvg);
+
+// var scoreAvg = Math.floor(.999999);
+// console.log(scoreAvg);
