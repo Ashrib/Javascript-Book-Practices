@@ -262,3 +262,18 @@
 
 // var scoreAvg = Math.floor(.999999);
 // console.log(scoreAvg);
+
+       // ------Ch#27 (Generating random numbers)------
+// var bigDecimal = Math.random();
+// var improvedNum = (bigDecimal * 6) + 1;
+// var numberOfStars = Math.floor(improvedNum);
+// console.log(numberOfStars);
+
+       // ------Ch#28 (Converting strings to integers and decimals)------
+// var currentAge = prompt("Enter your age.");
+// var yearsEligibleToVote = currentAge - 18;
+// console.log(yearsEligibleToVote);   
+
+// var currentAge = prompt("Enter your age.");
+// var qualifyingAge = parseInt(currentAge) + 1;
+// console.log(qualifyingAge);
