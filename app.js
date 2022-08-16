@@ -504,4 +504,70 @@ function swapPic(eId, newPic) {
 } */}
 
        // ------Ch#54 (Swapping images and setting classes)------
-              
+// function swapPic() { // changing src of img
+//  var pic = document.getElementById("before");
+//  pic.src = "after-pic.jpg";
+// }  
+
+// function getAddress() { //The function probes the href property of the link tag
+//  var link = document.getElementById("link1");
+//  var address = link.href;
+// }
+
+// function enlargeForm() { //This function changes the formatting of a form that has the id "f12" by changing its class
+//  var frm = document.getElementById("link1);
+//  frm.className = "jumbo";
+// }
+
+       // ------Ch#55 (Setting styles)------
+// function makeBig() {
+//  document.getElementById("p1").className += " big";
+// }
+
+// function makeBig() {
+//  document.getElementById("p1").style.fontSize = "2em";
+// }
+
+// document.getElementById("pic99").style.cssFloat = "left";
+// document.getElementById("div9").style.visibility = "hidden";
+// document.getElementById("mainPic").style.margin = "0 10px 0 10px;";
+
+       // ------Ch#56 (Target all elements by tag name)------
+{/* <p>This bed is too small.</p>
+<p>This bed is too big.</p>
+<p>This bed is just right.</p> */}
+// var par = document.getElementsByTagName("p");
+// var textInMiddleParagraph = par[1].innerHTML; // get middle para
+
+// for (var i = 0; i < par.length; i++) { // changing fontfamily of each para
+//  par[i].style.fontFamily = "Verdana, Geneva, sans-serif";
+// }
+
+       // ------Ch#57 (Target some elements by tag name)------
+// var e = document.getElementByID("rules"); // for target p elements of specific div
+// var paragraphs = e.getElementsByTagName("p"); 
+
+// var t = document.getElementById("table9");
+// var cells = t.getElementsByTagName("td");
+// for (var i = 0; i < cells.length; i++) {
+//  cells[i].style.backgroundColor = "pink";
+// }
+
+
+       // ------Ch#60 (The DOM:Finding children)------
+{/* <div id="cal">
+<p>Southern Cal is sunny.</p>
+<p>Northern Cal is rainy.</p>
+<p>Eastern Cal is desert.</p>
+</div>
+<div id="ny">
+<p>Urban NY is crowded.</p>
+<p>Rural NY is sparse.</p>
+</div>
+
+var d = document.getElementById("ny");
+var p = d.childNodes[1];
+var contents = p.innerHTML;
+alert(contents) */}
+
+
