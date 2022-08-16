@@ -482,6 +482,26 @@ function expandLoris() {
  var expandedParagraph = "Slow lorises are a group of several species of trepsirrhine primates which make up the genus Nycticebus. They have a round head, narrow snout, large eyes, and a variety of distinctive coloration patterns that are species-dependent. The hands and feet of slow lorises have several adaptations that give them a pincer-like grip and enable them to grasp branches for long periods of time. Slow lorises have a toxic bite, a rare trait among mammals.";
  document.getElementById("slowLoris").innerHTML = expandedParagraph;
 } */}
-       
 
+       // ------Ch#52 (Manipulating images and text)------
+// <img src="blobfish.jpg" id="ugly" onClick="makeInvisible();">
 
+// You have a CSS class for invisibility.
+// .hidden {display:none;}
+
+// function makeInvisible() {
+//    document.getElementById("ugly").className = "hidden";
+// }
+ 
+// function makeBig() {   // adding new claass by js
+//    document.getElementById("p1").className += " big";
+// }
+
+       // ------Ch#53 (Swapping images)------
+{/* <img src="before-pic.jpg" id="before" onMouseover="swapPic(id,'after-pic.jpg');"></img>
+function swapPic(eId, newPic) {
+   document.getElementById(eId).src = newPic;
+} */}
+
+       // ------Ch#54 (Swapping images and setting classes)------
+              
