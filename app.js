@@ -387,4 +387,101 @@
 // }
 // calcTot(65)
 
+       // ------Ch#39 (switch statements:How to start them)------
+// var dayOfWk = "Fri";
+// switch(dayOfWk) {
+//  case "Sat" :
+//  alert("Whoopee");
+//  break;
+//  case "Sun" :
+//  alert("Whoopee");
+//  break;
+//  case "Fri" :
+//  alert("TGIF!");
+//  break;
+//  default :
+//  alert("Shoot me now!");
+// }
+
+       // ------Ch#41 (while loops)------
+// var i = 0;
+// while (i <= 3) {
+//   alert(i);
+//   i++;
+// }
+
+       // ------Ch#42 (do...while loops)------              
+// var i = 0;
+// do {
+//  alert(i);
+//  i++;
+// } while (i < 0);
+
+
+       // ------Ch#45 (do...while loops)------        
+// <a href="JavaScript:void(0)" >Click</a> //not to change the link of page
+
+       // ------Ch#47 (Events: mouse)------
+// <img src="before-pic.jpg" onMouseover="src='after-pic.jpg'">
+
+// <a href="index.html" onMouseover="this.style.color='green';">Home Page</a>
+// <img src="before-pic.jpg" onMouseover="src='after-pic.jpg'" onMouseout="src='before-pic.jpg'">
+
+       // ------Ch#48 (Events: fields)------
+// Email:<br>
+// <input type="text" size="30" onFocus="this.style.backgroundColor='yellow';">
+
+// Email:<br>
+// <input type="text" size="30" onFocus="this.style.backgroundColor='yellow';" onBlur="this.style.backgroundColor='white';">
+
+// Email:<br>
+// <input type="text" size="30" onFocus="makeFieldYellow();" onBlur="makeFieldWhite();">
+
+       // ------Ch#49 (Reading field values)------
+{/* <form onSubmit="checkAddress('email');">
+Email:
+<input type="text" id="email">
+<input type="submit" value="Submit">
+</form>
+function checkAddress(fieldId) {
+ var val = document.getElementById(fieldId).value;
+ if (val === "") {
+   alert("Email address required.");
+ }
+} */}
+
+       // ------Ch#50 (Setting field values)------
+{/* <form>
+ZIP:<br>
+<input type="text" id="zip" onBlur="fillCity();"><br>
+City:<br>
+<input type="text" id="city">
+</form> */}
+// function fillCity() {
+//  var cityName;
+//  var zipEntered = document.getElementById("zip").value;
+//  switch (zipEntered) {
+//    case "60608" :
+//    cityName = "Chicago";
+//    break;
+//    case "68114" :
+//    cityName = "Omaha";
+//    break;
+//    case "53212" :
+//    cityName = "Milwaukee";
+//  }
+//  document.getElementById("city").value = cityName;
+// }
+
+       // ------Ch#51 (Reading and setting paragraph text)------
+{/* <p id="slowLoris">
+Slow lorises are a group of several species of strepsirrhine primates which make up the genus Nycticebus.
+<a href="javascript:void(0);" onClick="expandLoris();"><em>Click for more.</em></a>
+</p>
+function expandLoris() {
+ var expandedParagraph = "Slow lorises are a group of several species of trepsirrhine primates which make up the genus Nycticebus. They have a round head, narrow snout, large eyes, and a variety of distinctive coloration patterns that are species-dependent. The hands and feet of slow lorises have several adaptations that give them a pincer-like grip and enable them to grasp branches for long periods of time. Slow lorises have a toxic bite, a rare trait among mammals.";
+ document.getElementById("slowLoris").innerHTML = expandedParagraph;
+} */}
+       
+
 
