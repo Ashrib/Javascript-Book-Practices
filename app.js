@@ -553,7 +553,7 @@ function swapPic(eId, newPic) {
 //  cells[i].style.backgroundColor = "pink";
 // }
 
-       // ------Ch#60 (The DOM:Finding children)------
+       // ------Ch#63 (The DOM:Finding children)------
 {/* <div id="cal">
 <p>Southern Cal is sunny.</p>
 <p>Northern Cal is rainy.</p>
