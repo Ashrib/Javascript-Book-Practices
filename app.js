@@ -570,3 +570,5 @@ var contents = p.innerHTML;
 alert(contents) */}
 
 
+       // ------Ch#61 (The DOM:Junk artifacts and nodeType)------
+
