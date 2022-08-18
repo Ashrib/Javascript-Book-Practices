@@ -571,4 +571,21 @@ alert(contents) */}
 
 
        // ------Ch#61 (The DOM:Junk artifacts and nodeType)------
+{/* <div id="humpty">
+<p>All the king's horses.</p>
+<p>All the dude's crew.</p>
+<p>All the town's orthopedists.</p>
+</div> */}
+// var d = document.getElementById("humpty");
+// var pCounter = 0;
+// for (var i = 0; i < d.childNodes.length; i++) {
+//  if (d.childNodes[i].nodeType === 1 ) {
+//        pCounter++;
+//  }
+//  if (pCounter === 2) {
+//        d.childNodes[i].innerHTML = "All his men.";
+//  break;
+//  }
+// }
+
 
