@@ -600,3 +600,7 @@ alert(contents) */}
 // var kidNode = document.getElementById("div2").childNodes[1];
 // var target = kidNode.parentNode;
 // console.log(target)
+
+// var kidNode = document.getElementById("div2").childNodes[1];
+// var target = kidNode.firstChild;
+// console.log(target)
