@@ -621,3 +621,22 @@ alert(contents) */}
 // nName = target.nodeValue;
 // console.log(nName)
 
+       // ------Ch#64 (The DOM: Counting elements)------
+// var liElements = document.getElementsByTagName("li");
+// var howManyLi = liElements.length;
+// console.log(howManyLi)
+// for(var i = 0; i < howManyLi; i++) {
+//        if(liElements[i].innerHTML === "") {
+//               liElements[i].innerHTML = "coming soon";
+//        }
+// }
+
+var parentNode = document.getElementById("listbox");
+var nodeList = parentNode.childNodes;
+console.log(nodeList)
+var numberPics = 0;
+for (var i = 0; i < nodeList.length; i++) {
+       if(nodeList[i].nodeName.toLowerCase() === "img") {
+       numberPics++;
+       }
+}console.log(numberPics)
