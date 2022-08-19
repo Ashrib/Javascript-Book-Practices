@@ -631,12 +631,12 @@ alert(contents) */}
 //        }
 // }
 
-var parentNode = document.getElementById("listbox");
-var nodeList = parentNode.childNodes;
-console.log(nodeList)
-var numberPics = 0;
-for (var i = 0; i < nodeList.length; i++) {
-       if(nodeList[i].nodeName.toLowerCase() === "img") {
-       numberPics++;
-       }
-}console.log(numberPics)
+// var parentNode = document.getElementById("listbox");
+// var nodeList = parentNode.childNodes;
+// console.log(nodeList)
+// var numberPics = 0;
+// for (var i = 0; i < nodeList.length; i++) {
+//        if(nodeList[i].nodeName.toLowerCase() === "img") {
+//        numberPics++;
+//        }
+// }console.log(numberPics)
