@@ -604,3 +604,20 @@ alert(contents) */}
 // var kidNode = document.getElementById("div2").childNodes[1];
 // var target = kidNode.firstChild;
 // console.log(target)
+
+       // ------Ch#63 (The DOM: Getting a target's name)------
+// var parent = document.getElementById("div1");
+// var target = parent.childNodes[1].childNodes[1].childNodes[0];
+// nName = target.nodeType;
+// console.log(nName)
+
+// var parent = document.getElementById("div1");
+// var target = parent.childNodes[1].childNodes[1];
+// nName = target.nodeName;
+// console.log(nName)
+
+// var parent = document.getElementById("div1");
+// var target = parent.childNodes[1].childNodes[1];
+// nName = target.nodeValue;
+// console.log(nName)
+
