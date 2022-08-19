@@ -588,4 +588,15 @@ alert(contents) */}
 //  }
 // }
 
+       // ------Ch#62 (The DOM:More ways to target elements)------
+// var kidNode = document.getElementById("div2");
+// var target = kidNode.childNodes[1];
+// console.log(target)
 
+// var kidNode = document.getElementById("div2").childNodes[1];
+// var target = kidNode.nextSibling;
+// console.log(target)
+
+// var kidNode = document.getElementById("div2").childNodes[1];
+// var target = kidNode.parentNode;
+// console.log(target)
