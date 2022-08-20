@@ -570,7 +570,7 @@ var contents = p.innerHTML;
 alert(contents) */}
 
 
-       // ------Ch#61 (The DOM:Junk artifacts and nodeType)------
+       // ---------Ch#61 (The DOM:Junk artifacts and nodeType)----------
 {/* <div id="humpty">
 <p>All the king's horses.</p>
 <p>All the dude's crew.</p>
@@ -588,7 +588,7 @@ alert(contents) */}
 //  }
 // }
 
-       // ------Ch#62 (The DOM:More ways to target elements)------
+       // ----------Ch#62 (The DOM:More ways to target elements)----------
 // var kidNode = document.getElementById("div2");
 // var target = kidNode.childNodes[1];
 // console.log(target)
@@ -605,7 +605,7 @@ alert(contents) */}
 // var target = kidNode.firstChild;
 // console.log(target)
 
-       // ------Ch#63 (The DOM: Getting a target's name)------
+       // ----------Ch#63 (The DOM: Getting a target's name)----------
 // var parent = document.getElementById("div1");
 // var target = parent.childNodes[1].childNodes[1].childNodes[0];
 // nName = target.nodeType;
@@ -621,7 +621,7 @@ alert(contents) */}
 // nName = target.nodeValue;
 // console.log(nName)
 
-       // ------Ch#64 (The DOM: Counting elements)------
+       // ----------Ch#64 (The DOM: Counting elements)------------
 // var liElements = document.getElementsByTagName("li");
 // var howManyLi = liElements.length;
 // console.log(howManyLi)
@@ -640,3 +640,47 @@ alert(contents) */}
 //        numberPics++;
 //        }
 // }console.log(numberPics)
+
+       // ----------Ch#65 (The DOM: Attributes)-----------
+// var target = document.getElementById("p1");
+// var hasClass = target.hasAttribute("style");
+// console.log(hasClass)
+
+// var target = document.getElementById("p1");
+// var hasClass = target.getAttribute("class");
+// console.log(hasClass)
+
+// var target = document.getElementById("p1");
+// var hasClass = target.setAttribute("height","50px");
+// console.log(target)
+
+// adding another class name ****************
+// var target = document.getElementById("p1");
+// var hasClass = target.setAttribute("class",+" nd-class");
+// console.log(target)
+
+       // ----------Ch#66 (The DOM: Attribute names and values)-----------
+
+// var target = document.getElementById("p1").attributes;
+// console.log(target);
+
+// var target = document.getElementById("p1").attributes;
+// var a = target[1]
+// console.log(a)
+
+// attribute value
+// var target = document.getElementById("p1").attributes
+// var b = target[1].nodeValue;
+// console.log(b);
+
+       // ----------Ch#67 (The DOM: Adding nodes)-----------
+// var getBody = document.getElementById("body");
+
+// var mainDiv = document.createElement("div");
+// mainDiv.setAttribute("class" , "divbyjs");
+// getBody.appendChild(mainDiv);
+
+// var para = document.createElement("p");
+// mainDiv.appendChild(para);
+
+// para.appendChild(document.createTextNode("hello"))
