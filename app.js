@@ -683,4 +683,136 @@ alert(contents) */}
 // var para = document.createElement("p");
 // mainDiv.appendChild(para);
 
-// para.appendChild(document.createTextNode("hello"))
+// para.appendChild(document.createTextNode("hello"));
+
+
+       // ----------Ch#69 (Objects)-----------
+/*
+var plan1 = {
+       names: "basic",
+       price: 5.99,
+       space: 100,
+       pages: 10,
+};
+plan1.discountMonths = [6, 7, 11];
+console.log(plan1);
+console.log(plan1.discountMonths[2]);
+console.log(typeof(plan1));
+*/
+
+       // ----------Ch#70 (Objects:Properties)-----------
+// var deal1 = {};
+// console.log(deal1);
+
+// deal1.cost = 5.88;
+// console.log(deal1);
+
+// deal1.names = "basic";
+// console.log(deal1);
+
+// deal1.market = undefined;
+// console.log(deal1);
+
+// deal1.boolean = true;
+// console.log(deal1);
+
+// deal1.array = ["Guarantee", "Free Ship"];
+// console.log(deal1);
+
+// delete deal1.market;
+// console.log(deal1)
+
+// console.log( "market" in deal1);
+// console.log( "cost" in deal1);
+
+       // ----------Ch#71 (Objects: Methods)-----------
+// var plan1 = {
+//        names: "Basic",
+//        price: 3.99,
+//        space: 100,
+//        transfer: 1000,
+//        pages: 10,
+//        discountMonths: [6, 7]
+// };
+// function calcAnnual() {
+//        var bestPrice = plan1.price;
+//        var currDate = new Date();
+//        var thisMo = currDate.getMonth();
+//        for (var i = 0; i < plan1.discountMonths.length; i++) {
+//               if (plan1.discountMonths[i] === thisMo) {
+//               bestPrice = plan1.price * .8;
+//               break;
+//               }
+//        }
+//        return bestPrice * 12;
+// };
+// console.log(calcAnnual());
+
+// var plan1 = {
+//        names: "Basic",
+//        price: 3.99,
+//        space: 100,
+//        transfer: 1000,
+//        pages: 10,
+//        discountMonths: [6, 7],
+//        calcAnnual: function(percentIfDisc) {
+//                             var bestPrice = this.price;
+//                             var currDate = new Date();
+//                             var thisMo = currDate.getMonth();
+//                             for (var i = 0; i < this.discountMonths.length; i++) {
+//                                    if (this.discountMonths[i] === thisMo) {
+//                                           bestPrice = this.price * percentIfDisc;
+//                                           break;
+//                                    }
+//                             }
+//                             return bestPrice * 12;
+//                             }
+// };
+// console.log(plan1.calcAnnual(.8));
+
+
+       // ----------Ch#72 (Objects: Constructors)-----------
+/*
+function Plan(name, price, space, transfer, pages) {
+       this.name = name;
+       this.price = price;
+       this.space = space;
+       this.transfer = transfer;
+       this.pages = pages;
+};
+var plan1 = new Plan("Basic", 3.99, 100, 1000, 10);
+console.log(plan1);
+
+var plan2 = new Plan("Premium", 5.99, 500, 5000, 50);
+var plan3 = new Plan("Ultimate", 9.99, 2000, 20000, 500);
+console.log(plan2);
+console.log(plan3);
+*/
+
+       // ----------Ch#73 (Objects: Constructors for methods)-----------
+// function Plan(name, price, space, transfer, pages, discountMonths) {
+//        this.name = name;
+//        this.price = price;
+//        this.space = space;
+//        this.transfer = transfer;
+//        this.pages = pages;
+//        this.discountMonths = discountMonths;
+//        this.calcAnnual = function(percentIfDisc) {
+//                             var bestPrice = this.price;
+//                             var currDate = new Date();
+//                             var thisMo = currDate.getMonth();
+//                             for (var i = 0; i < this.discountMonths.length; i++) {
+//                                    if (this.discountMonths[i] === thisMo) {
+//                                           bestPrice = this.price * percentIfDisc;
+//                                           break;
+//                                    }
+//                             }
+//                      return bestPrice * 12;
+//                      };
+// };
+// var p1 = new Plan("Basic", 3.99, 100, 1000, 10, [6, 7]);
+// var p2 = new Plan("Premium", 5.99, 500, 5000, 50, [6, 7, 11]);
+// var p3 = new Plan("Ultimate", 9.99, 2000, 20000, 500, [6, 7]);
+// var annualPrice = p1.calcAnnual(.85);
+
+// console.log(annualPrice);
